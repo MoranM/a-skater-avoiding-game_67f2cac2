@@ -1,0 +1,1 @@
+body, html {\\n    margin: 0;\\n    padding: 0;\\n    overflow: hidden;\\n    display: flex;\\n    justify-content: center;\\n    align-items: center;\\n    height: 100vh;\\n    background-color: #87ceeb;\\n}\\n\\n#gameCanvas {\\n    border: 1px solid #000;\\n}
