@@ -1,24 +1,15 @@
-export default class Controls {
-  constructor(player) {
-    this.player = player;
-    this.initControls();
-  }
-
-  initControls() {
-    window.addEventListener('keydown', (e) => {
-      switch (e.code) {
-        case 'ArrowLeft':
-          this.player.moveLeft();
-          break;
-        case 'ArrowRight':
-          this.player.moveRight();
-          break;
-        case 'Space':
-          this.player.jump();
-          break;
-        default:
-          break;
-      }
-    });
-  }
+export default function setupControls(player) {
+  window.addEventListener('keydown', (event) => {
+    switch (event.code) {
+      case 'ArrowLeft':
+        player.moveLeft();
+        break;
+      case 'ArrowRight':
+        player.moveRight();
+        break;
+      case 'Space':
+        player.jump();
+        break;
+    }
+  });
 }
